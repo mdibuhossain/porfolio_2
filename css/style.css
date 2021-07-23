@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+/*====================
+    custom variable
+======================*/
+:root{
+    --main-color: #FEB300;
+    --dark-bg: #111111;
+    --light-bg: #FFFFFF;
+    --deactive-color: #2b2a2a;
+    --fontColor-normal: #FFFFFF;
+    --font-bold: 600;
+    --font-bolder: 700;
+    --font-boldest: 800;
+    --normal-fontsize: 1rem;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--dark-bg);
+    color: var(--fontColor-normal);
+    font-size: var(--normal-fontsize);
+}
+a{
+    text-decoration: none;
+    color: var(--fontColor-normal);
+}
+ul{
+    list-style: none;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 50px;
+    right: 30px;
+    height: 100vh;
+    /* background-color: orange; */
+}
+
+.primary-nav{
+    padding: 0;
+}
+.nav-icon-item{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.nav-icon-item i{
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    width: 3rem;
+    height: 3rem;
+    line-height: 3rem;
+    /* padding: 16px; */
+    margin: .5rem;
+    border-radius: 50%;
+    background: var(--deactive-color);
+    z-index: 2;
+}
+.nav-icon-item a h5{
+    margin: 0;
+    position: absolute;
+    top: 8px;
+    right: 9px;
+    z-index: 1;
+    background: var(--main-color);
+    /* right: 50px; */
+    display: none;
+    padding: 12px 70px 12px 24px;
+    border-radius: 50px;
+}
+
+.block-color{
+    position: fixed;
+    height: 200%;
+    width: 100%;
+    top: -50%;
+    left: -83%;
+    transform: rotate(-15deg);
+    background: var( --main-color);
+}
+
+
+.home-details-container{
+
+}
+.hero-img{
+    background: url(../img/hero.jpg) top center no-repeat;
+    background-size: cover;
+    position: fixed;
+    height: calc(100vh - 80px);
+    top: 40px;
+    left: 40px;
+    border: none;
+    border-radius: 30px;
+    background-color: lightcoral;
+    box-shadow: 0 0 8px #111111;
+}
