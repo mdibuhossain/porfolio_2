@@ -136,14 +136,20 @@ ul{
     background-color: lightcoral;
     box-shadow: 0 0 8px #111111;
 }
+.hero-details-section{
+    display: flex;
+    align-items: center;
+}
 .hero-details{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     letter-spacing: 0.09rem;
     line-height: 2.1rem;
 }
 @media (min-width: 992px){
     .hero-details-section{
         display: flex;
-        align-items: center;
         position: relative;
         height: calc(100vh - 80px);
         top: 40px;
@@ -173,10 +179,6 @@ ul{
         align-items: center;
     }
     .hero-details{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
         text-align: center;
     }
     .hero-details > div{
