@@ -77,9 +77,16 @@ ul{
     padding: 12px 70px 12px 24px;
     border-radius: 50px;
 }
-
+.home-container{
+    width: 100vw;
+    height: 100vh;
+    /* position: fixed; */
+    position: relative;
+    overflow: hidden;
+}
 .block-color{
-    position: fixed;
+    position: absolute;
+    z-index: 10;
     height: 200%;
     width: 100%;
     top: -50%;
@@ -87,17 +94,16 @@ ul{
     transform: rotate(-15deg);
     background: var( --main-color);
 }
-.home-container{
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-}
 
 .home-details-container{
     position: relative;
+    z-index: 20;
+    height: 100vh;
+
+
 }
 .hero-img{
-    background: url(../img/myself.jpg) top center no-repeat;
+    background: url(../img/hero.jpg) top center no-repeat;
     background-size: cover;
     position: relative;
     height: calc(100vh - 80px);
@@ -108,25 +114,25 @@ ul{
     background-color: lightcoral;
     box-shadow: 0 0 8px #111111;
 }
-
-.hero-details-section{
-    display: flex;
-    align-items: center;
-    position: relative;
-    height: calc(100vh - 80px);
-    top: 40px;
-    left: 40px;
-    margin: auto;
-    width: 55%;
-}
-.hero-details{
-    max-width: 666px;
-    padding-right: 70px;
-    margin: auto;
-    line-height: 30px;
-    letter-spacing: 0.1rem;
-}
-@media (min-width:992px){
+@media (min-width: 992px){
+    .hero-details-section{
+        display: flex;
+        align-items: center;
+        position: relative;
+        height: calc(100vh - 80px);
+        top: 40px;
+        left: 40px;
+        padding: 0 72px 0 30px;
+        /* margin: auto; */
+        /* width: 37%;*/
+    }
+    .hero-details{
+        max-width: 666px;
+        padding-right: 70px;
+        margin: auto;
+        line-height: 30px;
+        letter-spacing: 0.1rem;
+    }
     .hero-details h1::before{
         content: "\f068";
         position: absolute;
@@ -135,6 +141,35 @@ ul{
     }
     .hero-details h1{
         padding-left: 60px;
+    }
+}
+@media (min-width: 576px){
+    .hero-details-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .hero-details{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .secondary-hero-img{
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        margin: auto;
+        margin-bottom: 30px;
+        border: 3px solid #656565;
+    }
+    p.hero-info-pera {
+        margin: auto;
+    }
+    .hero-button {
+        margin: auto;
     }
 }
 .hero-details h1{
