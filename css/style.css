@@ -12,7 +12,27 @@
     --font-bold: 600;
     --font-bolder: 700;
     --font-boldest: 800;
-    --normal-fontsize: 1rem;
+}
+@media (min-width: 992px) {
+    body{
+        --big-fontSize: 3rem;
+        --medium-fontSize: 2rem;
+        --normal-fontsize: 1rem;
+    }
+}
+@media (min-width: 576px) and (max-width: 991px) {
+    body{
+        --big-fontSize: 2.8rem;
+        --medium-fontSize: 1.8rem;
+        --normal-fontsize: 0.9rem;
+    }
+}
+@media (max-width: 575px) {
+    body{
+        --big-fontSize: 1.8rem;
+        --medium-fontSize: 1.2rem;
+        --normal-fontsize: 0.8rem;
+    }
 }
 
 *{
@@ -25,9 +45,15 @@ body{
     color: var(--fontColor-normal);
     font-size: var(--normal-fontsize);
 }
+h1{
+    font-size: var(--big-fontSize);
+}
 a{
     text-decoration: none;
     color: var(--fontColor-normal);
+}
+p{
+    font-size: var(--normal-fontsize);
 }
 ul{
     list-style: none;
@@ -41,7 +67,6 @@ ul{
     width: 50px;
     right: 30px;
     height: 100vh;
-    /* background-color: orange; */
 }
 
 .primary-nav{
@@ -59,7 +84,6 @@ ul{
     width: 3rem;
     height: 3rem;
     line-height: 3rem;
-    /* padding: 16px; */
     margin: .5rem;
     border-radius: 50%;
     background: var(--deactive-color);
@@ -72,7 +96,6 @@ ul{
     right: 9px;
     z-index: 1;
     background: var(--main-color);
-    /* right: 50px; */
     display: none;
     padding: 12px 70px 12px 24px;
     border-radius: 50px;
@@ -80,7 +103,6 @@ ul{
 .home-container{
     width: 100vw;
     height: 100vh;
-    /* position: fixed; */
     position: relative;
     overflow: hidden;
 }
@@ -114,6 +136,10 @@ ul{
     background-color: lightcoral;
     box-shadow: 0 0 8px #111111;
 }
+.hero-details{
+    letter-spacing: 0.09rem;
+    line-height: 2.1rem;
+}
 @media (min-width: 992px){
     .hero-details-section{
         display: flex;
@@ -123,15 +149,11 @@ ul{
         top: 40px;
         left: 40px;
         padding: 0 72px 0 30px;
-        /* margin: auto; */
-        /* width: 37%;*/
     }
     .hero-details{
         max-width: 666px;
         padding-right: 70px;
         margin: auto;
-        line-height: 30px;
-        letter-spacing: 0.1rem;
     }
     .hero-details h1::before{
         content: "\f068";
@@ -143,7 +165,7 @@ ul{
         padding-left: 60px;
     }
 }
-@media (min-width: 576px){
+@media (min-width: 576px) and (max-width: 991px){
     .hero-details-section{
         display: flex;
         flex-direction: column;
@@ -156,6 +178,10 @@ ul{
         justify-content: center;
         align-items: center;
         text-align: center;
+    }
+    .hero-details > div{
+        max-width: 550px;
+        margin: auto;
     }
     .secondary-hero-img{
         width: 250px;
