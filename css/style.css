@@ -120,16 +120,33 @@ ul{
     width: 55%;
 }
 .hero-details{
-    max-width: 600px;
+    max-width: 666px;
     padding-right: 70px;
     margin: auto;
     line-height: 30px;
     letter-spacing: 0.1rem;
 }
+@media (min-width:992px){
+    .hero-details h1::before{
+        content: "\f068";
+        position: absolute;
+        left: 0;
+        font-family: 'Fontawesome';
+    }
+    .hero-details h1{
+        padding-left: 60px;
+    }
+}
 .hero-details h1{
     font-weight: var(--font-bolder);
     color: var(--main-color);
+    position: relative;
 }
 .hero-details h1 span{
     color: var(--fontColor-normal);
+}
+.secondary-hero-img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
 }
