@@ -87,15 +87,19 @@ ul{
     transform: rotate(-15deg);
     background: var( --main-color);
 }
-
+.home-container{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+}
 
 .home-details-container{
-
+    position: relative;
 }
 .hero-img{
     background: url(../img/hero.jpg) top center no-repeat;
     background-size: cover;
-    position: fixed;
+    position: relative;
     height: calc(100vh - 80px);
     top: 40px;
     left: 40px;
@@ -103,4 +107,18 @@ ul{
     border-radius: 30px;
     background-color: lightcoral;
     box-shadow: 0 0 8px #111111;
+}
+
+.hero-details-section{
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: calc(100vh - 80px);
+    top: 40px;
+    left: 40px;
+}
+.hero-details{
+    max-width: 600px;
+    margin-right: 50px;
+    margin: auto;
 }
