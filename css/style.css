@@ -97,7 +97,7 @@ ul{
     position: relative;
 }
 .hero-img{
-    background: url(../img/hero.jpg) top center no-repeat;
+    background: url(../img/myself.jpg) top center no-repeat;
     background-size: cover;
     position: relative;
     height: calc(100vh - 80px);
@@ -116,9 +116,20 @@ ul{
     height: calc(100vh - 80px);
     top: 40px;
     left: 40px;
+    margin: auto;
+    width: 55%;
 }
 .hero-details{
     max-width: 600px;
-    margin-right: 50px;
+    padding-right: 70px;
     margin: auto;
+    line-height: 30px;
+    letter-spacing: 0.1rem;
+}
+.hero-details h1{
+    font-weight: var(--font-bolder);
+    color: var(--main-color);
+}
+.hero-details h1 span{
+    color: var(--fontColor-normal);
 }
