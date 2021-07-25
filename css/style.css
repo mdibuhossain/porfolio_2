@@ -169,6 +169,7 @@ ul{
 }
 .hero-btn i{
     position: relative;
+    display: inline-block;
     font-weight: var(--font-bold);
     padding: 19px;
     border-radius: 50%;
