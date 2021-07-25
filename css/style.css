@@ -100,11 +100,11 @@ ul{
 .nav-icon-item a h5{
     color: var(--fontColor-normal);
     font-size: 0px;
+    font-weight: var(--font-bold);
     margin: 0;
     position: absolute;
     top: 0px;
     right: 0;
-    /* line-height: 23px; */
     z-index: 20;
     background: var(--main-color);
     padding: 36px 50px 13px 0px;
