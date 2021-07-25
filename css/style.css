@@ -179,6 +179,36 @@ ul{
     .hero-details h1{
         padding-left: 60px;
     }
+    .hero-btn::before{
+        content: "";
+        position: absolute;
+        width: 100%;
+        right: 25px;
+        top: 0px;
+        height: 54px;
+        background-color: var(--main-color);
+        z-index: -1;
+        transition: .2s ease-in-out;
+    }
+    .hero-btn i{
+        position: relative;
+        right: -10px;
+        top: 0;
+        padding: 19px;
+        border-radius: 50%;
+        background: var(--main-color);
+    }
+    .hero-btn{
+        display: inline-block;
+        position: relative;
+        text-transform: uppercase;
+        padding: 0px 10px 0 30px;
+        border: 1px solid var(--main-color);
+        overflow: hidden;
+    }
+    .hero-btn:hover + .hero-btn::before{
+        background-color: red;
+    }
 }
 @media (min-width: 576px) and (max-width: 991px){
     .home-container{
@@ -211,6 +241,7 @@ ul{
     .hero-button {
         margin: auto;
     }
+
 }
 .hero-details h1{
     font-weight: var(--font-bolder);
