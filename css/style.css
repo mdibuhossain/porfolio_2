@@ -110,6 +110,35 @@ ul{
     border-radius: 80px;
     transition: .2s ease-in-out;
 }
+.secondary-navbar-toggler{
+    border: none;
+    padding: 0;
+    margin-top: 15px;
+}
+.secondary-nav-btn{
+    background: none;
+    border: none;
+}
+.secondary-nav-ico{
+    font-size: 2.5rem;
+    color: var(--main-color);
+}
+.myOffcanvas-edit{
+    top: 0;
+    right: 0;
+    width: 100vw;
+    border: none;
+    transform: translateX(100%);
+}
+.myoffcanvas-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 1rem;
+}
+
+
+
 .home-container{
     width: 100vw;
     height: 100vh;
