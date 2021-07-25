@@ -169,10 +169,11 @@ ul{
 }
 .hero-btn i{
     position: relative;
-    right: -10px;
-    top: 0;
+    font-weight: var(--font-bold);
     padding: 19px;
     border-radius: 50%;
+    right: -10px;
+    top: 0;
     background: var(--main-color);
 }
 .hero-btn{
@@ -209,6 +210,7 @@ ul{
     }
     .hero-details h1{
         padding-left: 60px;
+        text-transform: uppercase;
     }
     
 }
