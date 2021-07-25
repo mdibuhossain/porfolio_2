@@ -135,11 +135,12 @@ ul{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 2rem 1rem 0px 1rem;
+    padding: 1.1rem 1rem 0px 0.6rem;
 }
 .myoffcanvas-header i{
     font-size: 1.5rem;
     color: var(--main-color);
+    padding: 15px;
 }
 
 .sec-nav{
