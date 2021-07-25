@@ -135,9 +135,49 @@ ul{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 2rem 1rem;
+    padding: 2rem 1rem 0px 1rem;
 }
-
+.offset-cancle-btn{
+    background: url(../img/cancle-btn.png) center center no-repeat;
+    background-size: cover;
+}
+.sec-nav{
+    display: flex;
+    flex-direction: column;
+}
+.sec-nav a:not(:first-child){
+    border-top: 1px solid rgb(70, 69, 69);
+}
+.sec-nav a{
+    text-transform: uppercase;
+    font-weight: var(--font-bold);
+    font-size: var(--medium-fontSize);
+    padding: 10px 0;
+}
+#home::before{
+    content: "\f015";
+    font-family: 'Fontawesome';
+    font-weight: 100;
+    margin-right: 15px;
+}
+#about::before{
+    content: "\f007";
+    font-family: 'Fontawesome';
+    font-weight: 100;
+    margin-right: 15px;
+}
+#portfolio::before{
+    content: "\f0b1";
+    font-family: 'Fontawesome';
+    font-weight: 100;
+    margin-right: 15px;
+}
+#contact::before{
+    content: "\f086";
+    font-family: 'Fontawesome';
+    font-weight: 100;
+    margin-right: 15px;
+}
 
 
 .home-container{
