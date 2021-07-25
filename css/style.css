@@ -15,21 +15,21 @@
 }
 @media (min-width: 992px) {
     body{
-        --big-fontSize: 2.8rem;
+        --big-fontSize: 2.5rem;
         --medium-fontSize: 2rem;
         --normal-fontsize: 1rem;
     }
 }
 @media (min-width: 576px) and (max-width: 991px) {
     body{
-        --big-fontSize: 2.8rem;
-        --medium-fontSize: 1.8rem;
+        --big-fontSize: 2rem;
+        --medium-fontSize: 1.5rem;
         --normal-fontsize: 0.9rem;
     }
 }
 @media (max-width: 575px) {
     body{
-        --big-fontSize: 1.8rem;
+        --big-fontSize: 1.5rem;
         --medium-fontSize: 1.2rem;
         --normal-fontsize: 0.8rem;
     }
@@ -47,6 +47,7 @@ body{
 }
 h1{
     font-size: var(--big-fontSize);
+    text-transform: uppercase;
 }
 a{
     text-decoration: none;
@@ -155,7 +156,6 @@ ul{
     transform: rotate(-15deg);
     background: var( --main-color);
 }
-
 .home-details-container{
     position: relative;
     z-index: 20;
@@ -184,6 +184,9 @@ ul{
     justify-content: center;
     letter-spacing: 0.09rem;
     line-height: 2.1rem;
+}
+#hero-subtitle{
+    font-size: var(--medium-fontSize);
 }
 .hero-btn::before{
     content: "";
