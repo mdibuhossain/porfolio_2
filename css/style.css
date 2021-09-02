@@ -217,7 +217,7 @@ ul{
     border: none;
     border-radius: 30px;
     background-color: lightcoral;
-    box-shadow: 0 0 8px #111111;
+    box-shadow: 1px 0px 15px #00000088;
 }
 .hero-details-section{
     display: flex;
