@@ -14,7 +14,9 @@
 
 <body>
 
+    <!-- Header -->
     <header id="header" class="header">
+        <!-- Large screen Nav-bar -->
         <ul class="d-none d-lg-block primary-nav">
             <li class="nav-icon-item">
                 <a href="#home">
@@ -41,6 +43,8 @@
                 </a>
             </li>
         </ul>
+
+        <!-- Mobile-size nav-bar -->
         <nav class="secondary-nav d-none d-lg-none">
             <ul>
                 <li>home</li>
@@ -51,58 +55,61 @@
         </nav>
     </header>
 
-    <section class="secondary-navbar d-lg-none d-block">
-        <nav class="navbar">
-            <div class="container-fluid">
-                <button class="secondary-navbar-toggler navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <a class="secondary-nav-btn" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
-                        aria-controls="offcanvasExample"><i class='bx bx-menu-alt-left secondary-nav-ico'></i></a>
-                </button>
-                <div class="offcanvas offcanvas-end myOffcanvas-edit" tabindex="-1" id="offcanvasExample"
-                    aria-labelledby="offcanvasExampleLabel">
-                    <div class="myoffcanvas-header bg-dark">
-                        <i class="fas fa-times" data-bs-dismiss="offcanvas" aria-label="Close"></i>
-                        <!-- <button type="button" class="btn-close text-reset offset-cancle-btn" data-bs-dismiss="offcanvas" aria-label="Close"></i></button> -->
+    <main>
+        <section class="secondary-navbar d-lg-none d-block">
+            <nav class="navbar">
+                <div class="container-fluid">
+                    <button class="secondary-navbar-toggler navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <a class="secondary-nav-btn" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                            aria-controls="offcanvasExample"><i class='bx bx-menu-alt-left secondary-nav-ico'></i></a>
+                    </button>
+                    <div class="offcanvas offcanvas-end myOffcanvas-edit" tabindex="-1" id="offcanvasExample"
+                        aria-labelledby="offcanvasExampleLabel">
+                        <div class="myoffcanvas-header bg-dark">
+                            <i class="fas fa-times" data-bs-dismiss="offcanvas" aria-label="Close"></i>
+                        </div>
+                        <div class="offcanvas-body bg-dark">
+                            <div class="sec-nav">
+                                <a href=""><span id="home">home</span></a>
+                                <a href=""><span id="about">about</span></a>
+                                <a href=""><span id="portfolio">portfolio</span></a>
+                                <a href=""><span id="contact">contact</span></a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="offcanvas-body bg-dark">
-                        <div class="sec-nav">
-                            <a href=""><span id="home">home</span></a>
-                            <a href=""><span id="about">about</span></a>
-                            <a href=""><span id="portfolio">portfolio</span></a>
-                            <a href=""><span id="contact">contact</span></a>
+                </div>
+            </nav>
+        </section>
+
+        <section class="container-fluid home-container">
+            <div class="d-none d-lg-block block-color"></div>
+            <div class="row home-details-container">
+                <div class="col-lg-4 d-none d-lg-block hero-img"></div>
+                <div class="col-lg-8 col-12 hero-details-section">
+                    <div class="hero-details">
+                        <div>
+                            <img src="img/hero-rounded.jpg"
+                                class="img-fluid d-none d-sm-block d-lg-none secondary-hero-img">
+                            <h1>I'M Md Ibrahim.<br><span id="hero-subtitle">jr. WEB Developer</span></h1>
+                            <p hero-info-pera>I'm a Tunisian based web designer & front‑end developer focused on
+                                crafting
+                                clean & user‑friendly
+                                experiences, I am passionate about building excellent software that improves the lives
+                                of
+                                those
+                                around me.</p>
+                            <a href="" class="hero-btn rounded-pill">
+                                more about me
+                                <i class='bx bx-right-arrow-alt'></i>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
-        </nav>
-    </section>
-
-    <section class="container-fluid home-container">
-        <div class="d-none d-lg-block block-color"></div>
-        <div class="row home-details-container">
-            <div class="col-lg-4 d-none d-lg-block hero-img"></div>
-            <div class="col-lg-8 col-12 hero-details-section">
-                <div class="hero-details">
-                    <div>
-                        <img src="img/hero-rounded.jpg"
-                            class="img-fluid d-none d-sm-block d-lg-none secondary-hero-img">
-                        <h1>I'M Md Ibrahim.<br><span id="hero-subtitle">jr. WEB Developer</span></h1>
-                        <p hero-info-pera>I'm a Tunisian based web designer & front‑end developer focused on crafting
-                            clean & user‑friendly
-                            experiences, I am passionate about building excellent software that improves the lives of
-                            those
-                            around me.</p>
-                        <a href="" class="hero-btn rounded-pill">
-                            more about me
-                            <i class='bx bx-right-arrow-alt'></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
 
     <script src="https://kit.fontawesome.com/ba8e85819d.js" crossorigin="anonymous"></script>

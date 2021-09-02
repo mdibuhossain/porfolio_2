@@ -38,8 +38,10 @@
 *{
     margin: 0;
     padding: 0;
+    transition: 0.125s ease-in-out;
 }
 body{
+    transition: 0.12s ease-in-out;
     font-family: 'Poppins', sans-serif;
     background-color: var(--dark-bg);
     color: var(--fontColor-normal);
@@ -183,7 +185,7 @@ ul{
 
 
 .home-container{
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     position: relative;
     overflow: hidden;
@@ -201,7 +203,9 @@ ul{
 .home-details-container{
     position: relative;
     z-index: 20;
-    height: 100vh;
+    height: 100%;
+    width: 100%;
+    margin: auto;
 }
 .hero-img{
     background: url(../img/hero.jpg) top center no-repeat;
@@ -288,6 +292,11 @@ ul{
         text-transform: uppercase;
     }
     
+}
+@media (max-width: 991px) {
+    .home-container{
+        height: 100%;
+    }
 }
 @media (min-width: 576px) and (max-width: 991px){
     .home-container{
