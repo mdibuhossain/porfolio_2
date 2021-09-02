@@ -295,7 +295,8 @@ ul{
 }
 @media (max-width: 991px) {
     .home-container{
-        height: 100%;
+        position: absolute;
+        height: 80%;
     }
 }
 @media (min-width: 576px) and (max-width: 991px){
