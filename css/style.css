@@ -405,6 +405,8 @@ ul{
 } */
 
 
+
+
 /* ABOUT page */
 .text-title{
     text-align: center;
@@ -445,7 +447,9 @@ ul{
 .resume-item:last-child{
     padding-bottom: 0;
 }
-
+.myProgress-bar{
+    background-color: var(--main-color);
+}
 
 
 
