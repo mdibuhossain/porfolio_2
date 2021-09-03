@@ -364,13 +364,24 @@ ul{
     right: 0;
     transition: 0.5s;
 }
+.page-title h2{
+    position: absolute;
+    left: 0;
+    right: 0;
+    font-size: 3.3rem;
+    font-weight: 900;
+    top: 36px;
+}
+.page-title h2 span{
+    color: var(--main-color);
+}
 .page-title h1{
     font-weight: 900;
     font-size: 7rem;
     color: #2b2a2a91;
     letter-spacing: 7px;
 }
-.page-title::before{
+/* .page-title::before{
     content: "MY";
     display: block;
     position: absolute;
@@ -390,7 +401,7 @@ ul{
     right: 0;
     font-size: 3.3rem;
     font-weight: 900;
-}
+} */
 
 
 /* portfolio */
