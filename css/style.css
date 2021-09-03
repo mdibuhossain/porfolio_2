@@ -495,6 +495,26 @@ ul{
 
 
 /* Contact */
+.big-icons{
+    position: relative;
+    width: 250px;
+}
+.big-icons i{
+    position: absolute;
+    font-size: 46px;
+    color: var(--main-color);
+}
+.big-icons span{
+    position: relative;
+    font-size: 16px;
+    left: 50px;
+}
+.big-icons span:nth-child(3){
+    font-weight: 600;
+}
+.social-icons{
+    padding-left: 0;
+}
 .social-icons li{
     display: inline-block;
 }
