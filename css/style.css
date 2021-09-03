@@ -364,6 +364,13 @@ ul{
     right: 0;
     transition: 0.5s;
 }
+.page-title h1{
+    font-weight: 900;
+    font-size: 7rem;
+    color: var(--deactive-color);
+    opacity: 0.6;
+    letter-spacing: 7px;
+}
 .page-title h2{
     position: absolute;
     left: 0;
@@ -374,12 +381,6 @@ ul{
 }
 .page-title h2 span{
     color: var(--main-color);
-}
-.page-title h1{
-    font-weight: 900;
-    font-size: 7rem;
-    color: #2b2a2a91;
-    letter-spacing: 7px;
 }
 /* .page-title::before{
     content: "MY";
