@@ -408,45 +408,6 @@ ul{
 
 
 /* ABOUT page */
-.text-title{
-    text-align: center;
-    margin-bottom: 3rem;
-}
-.text-title h2{
-    font-weight: 900;
-    text-transform: uppercase;
-}
-.special-text{
-    font-weight: 800;
-    /* color: #FFB727; */
-    color: var(--main-color);
-}
-.resume-item h4{
-    line-height: 18px;
-    text-transform: uppercase;
-    font-size: 16px;
-}
-.resume-item::before{
-    content: "";
-    position: absolute;
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-    left: -9px;
-    top: 0;
-    background: #fff;
-    border: 2px solid #82909c;
-}
-.resume-item{
-    margin: 0;
-    padding-bottom: 16px;
-    padding-left: 16px;
-    position: relative;
-    border-left: 2px solid #82909c;
-}
-.resume-item:last-child{
-    padding-bottom: 0;
-}
 .myProgress-bar{
     background-color: var(--main-color);
 }
