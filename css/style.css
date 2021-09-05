@@ -93,7 +93,7 @@ ul{
     display: flex;
     position: relative;
     justify-content: center;
-    color: var(--fontColor-normal);
+    color: var(--fontColor-light);
     font-size: 1.2rem;
     padding: 15px;
     margin-bottom: 1.2rem;
@@ -108,7 +108,7 @@ ul{
     padding: 13px 55px 12px 20px;
 }
 .nav-icon-item a h5{
-    color: var(--fontColor-normal);
+    color: var(--fontColor-light);
     font-size: 0px;
     font-weight: var(--font-bold);
     margin: 0;
@@ -413,7 +413,9 @@ ul{
 
 
 
-/* ABOUT page */
+/* --------------------------------------
+----------------ABOUT page---------------
+-----------------------------------------*/
 .myProgress-bar{
     background-color: var(--main-color);
 }
@@ -421,12 +423,9 @@ ul{
 
 
 
-
-
-
-
-
-/* PORTFOLIO Page */
+/* --------------------------------------
+--------------PORTFOLIO Page-------------
+-----------------------------------------*/
 .show-case-content{
     margin-top: 250px;
     margin-bottom: 30px;
@@ -501,7 +500,9 @@ ul{
 
 
 
-/* Contact */
+/*-----------------------------------------
+------------------Contact------------------
+-------------------------------------------*/
 .big-icons{
     position: relative;
     width: 250px;
